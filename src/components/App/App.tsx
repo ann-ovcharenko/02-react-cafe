@@ -4,18 +4,18 @@ import css from "./App.module.css";
 import VoteOptions from "../VoteOptions/VoteOptions";
 import VoteStats from "../VoteStats/VoteStats";
 import Notification from "../Notification/Notification";
-import type { VotesState, VoteKey } from "../../types/votes.ts";
+import type { Votes, VoteType } from "../../types/votes.ts";
 
 const App: React.FC = () => {
-  const initialVotes: VotesState = {
+  const initialVotes: Votes = {
     good: 0,
     neutral: 0,
     bad: 0,
   };
 
-  const [votes, setVotes] = useState<VotesState>(initialVotes);
+  const [votes, setVotes] = useState<Votes>(initialVotes);
 
-  const handleVote = (type: VoteKey) => {
+  const handleVote = (type: VoteType) => {
     setVotes((prevVotes) => ({
       ...prevVotes,
       [type]: prevVotes[type] + 1,
