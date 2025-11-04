@@ -1,9 +1,9 @@
-import CafeInfo from "../CafeInfo/CafeInfo.tsx";
+import CafeInfo from "../CafeInfo/CafeInfo";
 import React, { useState } from "react";
 import css from "./App.module.css";
-import VoteOptions from "../VoteOptions/VoteOptions.tsx";
-import VoteStats from "../VoteStats/VoteStats.tsx";
-import Notification from "../Notification/Notification.tsx";
+import VoteOptions from "../VoteOptions/VoteOptions";
+import VoteStats from "../VoteStats/VoteStats";
+import Notification from "../Notification/Notification";
 import type { VotesState, VoteKey } from "../../types/votes.ts";
 
 const App: React.FC = () => {
