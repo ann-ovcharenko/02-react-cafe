@@ -4,7 +4,7 @@ import css from "./App.module.css";
 import VoteOptions from "../VoteOptions/VoteOptions";
 import VoteStats from "../VoteStats/VoteStats";
 import Notification from "../Notification/Notification";
-import type { VotesState, VoteKey } from "../../types/votes";
+import type { VotesState, VoteKey } from "../../types/votes.ts";
 
 const App: React.FC = () => {
   const initialVotes: VotesState = {
