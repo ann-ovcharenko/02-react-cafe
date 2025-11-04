@@ -1,4 +1,4 @@
-import CafeInfo from "../CafeInfo/CafeInfo.tsx";
+import CafeInfo from "../CafeInfo/CafeInfo";
 import React, { useState } from "react";
 import css from "./App.module.css";
 import VoteOptions from "../VoteOptions/VoteOptions";
